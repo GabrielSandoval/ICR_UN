@@ -90,6 +90,8 @@ x = imgetfile();
     file_extension = handles.file_extension;
     handles.path = x;
     path = x;
+    handles
+    set(handles.file_field, 'string', strcat('FILENAME: ', file_name, file_extension));
     guidata(hObject, handles);
 %end
 
